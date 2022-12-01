@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+header{
+    height: 80px;
+    width: 100vw;
+    color: white;
+    background-color: black;
+}
+
+footer{
+    height: 100px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: black;
+}
+
+
+nav,
+#menu-checkbox{
+    display: none;
+}
+
+nav a{
+    display: block;
+    color:white;
+    padding: 10px;
+    padding-right: 10px;
+}
+
+nav{
+    position: absolute;
+    background-color: black;
+    top: 90px;
+}
+
+#menu-checkbox:checked ~ nav{
+    display: block;
+}
+
+
+.container{
+    display:inline-flex;
+    width: 100vw;
+    align-items: center;
+}
+.item{
+    flex:1;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.item2{
+    flex: 1;
+    padding-top: 3px;
+    margin: 3px;
+    margin-left: 10px;
+
+}
+
+.one{
+    flex: 1;
+}
+
+.two{
+    flex:3;
+}
+
+.icon-size{
+    margin:10px;
+    margin-left: 20px;
+    font-size: xx-large;
+    clear: both;
+    color: white;
+}
+
+.margintop{
+    margin-top: 10px;
+}
+
+.scroller{
+    display: flex;
+    margin-top: 3%;
+    height: 30vh;
+    gap: 15px;
+    overflow-x:auto;
+    background-color: rgba(0, 0, 0, 0.172);
+}
+
+.scroller img{
+    width:70vw;
+    height: 25vh;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.test{
+    width: 70vw;
+    height: 80%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.pos{
+    position: absolute;
+}
+.textmargin{
+    margin: 2%;
+}
+
+.imgsmall{
+    height: auto;
+    width: 100vw;
+}
+
+.centertxt{
+    position:fixed;
+    display: flex;
+    margin-top: 30%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+@media (min-width:437px){
+    header{
+        height: 100px;
+        width: 100vw;
+        margin-bottom: 30px;
+        color: white;
+        background-color: black;
+
+    }
+    footer{
+        height: 120px;
+        width: 100vw;
+        position:static;
+        margin-top: 20px;
+        color: white;
+        background-color: black;
+    } 
+
+
+}
+
+@media(min-width: 550px){
+    .scroller{
+        display: flex;
+        margin-top: 3%;
+        height: 40vh;
+        gap: 15px;
+        overflow-x:auto;
+        background-color: rgba(0, 0, 0, 0.172);
+    }
+    .bold{
+        font-size: x-large;
+    }
+}
+
+@media (min-width:800px) {    
+    .scroller{
+    display: flex;
+    margin-top: 3%;
+    height: 40vh;
+    gap: 15px;
+    overflow-x:auto;
+    background-color: rgba(0, 0, 0, 0.172);
+}
+.scroller img{
+    width:70vw;
+    height: 30vh;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.bold{
+    font-size: xx-large;
+}
+.bold2{
+    font-size: larger;
+}
+    
+}
+
+@media (min-width:1000px){
+    .scroller img{
+        width:70vw;
+        height: 42vh;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .scroller{
+        display: flex;
+        margin-top: 3%;
+        height: 55vh;
+        gap: 15px;
+        overflow-x:auto;
+        background-color: rgba(0, 0, 0, 0.172);
+    }
+}
+
+@media (min-width:1100px){
+    header{
+        height: 130px;
+        width: 100vw;
+        margin-bottom: 30px;
+        color: white;
+        background-color: black;
+
+    }
+
+    footer{
+        height: 150px;
+        width: 100vw;
+        position:static;
+        bottom: 0;
+        margin-top: 20px;
+        color: white;
+        background-color: black;
+
+    }
+    .scroller{
+        display: flex;
+        margin-top: 3%;
+        height: 55vh;
+        gap: 15px;
+        overflow-x:auto;
+        background-color: rgba(0, 0, 0, 0.172);
+    }
+    .scroller img{
+        width:70vw;
+        height: 45vh;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .bold2{
+        font-size: x-large;
+    }
+}
+
+@media (min-width:1300px){
+    .biggertext{
+        font-size: xx-large;
+    }
+}

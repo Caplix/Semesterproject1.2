@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+header{
+    height: 80px;
+    width: 100vw;
+    color: white;
+    background-color: black;
+}
+
+footer{
+    height: 100px;
+    width: 100vw;
+    position: static;
+    bottom: 0;
+    color: white;
+    background-color: black;
+}
+
+
+nav,
+#menu-checkbox{
+    display: none;
+}
+
+nav a{
+    display: block;
+    color:white;
+    padding: 10px;
+    padding-right: 10px;
+}
+
+nav{
+    position: absolute;
+    background-color: black;
+    top: 90px;
+}
+
+#menu-checkbox:checked ~ nav{
+    display: block;
+}
+
+
+.container{
+    display:inline-flex;
+    width: 100vw;
+    align-items: center;
+}
+.item{
+    flex:1;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.item2{
+    flex: 1;
+    padding-top: 3px;
+    margin: 3px;
+    margin-left: 10px;
+
+}
+
+.one{
+    flex: 1;
+}
+
+.two{
+    flex:3;
+}
+
+.icon-size{
+    margin:10px;
+    margin-left: 20px;
+    font-size: xx-large;
+    clear: both;
+    color: white;
+}
+
+.margintop{
+    margin-top: 20px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textmargin{
+    margin: 2%;
+}
+
+.imgsmall{
+    height: auto;
+    width: 100vw;
+}
+
+.crop{
+    overflow: hidden;
+    height: 200px;
+    max-height: 160px;
+
+}
+
+.centertxt{
+    position:fixed;
+    display: flex;
+    margin-top: 30%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+@media (min-width:500px){
+    .crop{
+        overflow: hidden;
+        height: 300px;
+        max-height: 230px;
+    
+    }
+}
+
+@media (min-width:700px){
+    .crop{
+        overflow: hidden;
+        height: 400px;
+        max-height: 300px;
+    
+    }
+}
+@media (min-width:1000px){
+    .crop{
+        overflow: hidden;
+        height: 500px;
+        max-height: 400px;
+    
+    }
+}
+
+@media (min-width:1200px){
+    .crop{
+        overflow: hidden;
+        height: 600px;
+        max-height: 500px;
+    }
+
+    h2{
+        font-size: xx-large;
+    }
+    h4{
+        font-size:larger;
+    }
+    p{
+        font-weight:700;
+    }
+}
+
+
+@media (min-width:1600px){
+    .crop{
+        overflow: hidden;
+        height: 700px;
+        max-height: 600px;
+    
+    }
+    p{
+        font-size: large;
+    }
+}
+
+@media (min-width:1800px){
+    .crop{
+        overflow: hidden;
+        height: 800px;
+        max-height: 700px;
+    
+    }
+}
