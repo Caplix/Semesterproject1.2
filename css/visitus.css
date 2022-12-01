@@ -3,6 +3,9 @@
     margin: 0;
     border: 0;
 }
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 header{
     height: 80px;
@@ -37,6 +40,7 @@ nav{
     position: absolute;
     background-color: black;
     top: 90px;
+    right: 1%;
 }
 
 #menu-checkbox:checked ~ nav{
@@ -52,23 +56,21 @@ nav{
 .item{
     flex:1;
     padding: 10px;
-    margin-top: 10px;
 }
 
 .item2{
     flex: 1;
     padding-top: 3px;
     margin: 3px;
-    margin-left: 10px;
-
 }
 
 .one{
-    flex: 1;
+    flex: 2;
+    margin-left: 5px;
 }
 
 .two{
-    flex:3;
+    flex:1;
 }
 
 .icon-size{
@@ -82,10 +84,19 @@ nav{
 .margintop{
     margin-top: 20px;
 }
+.float-right{
+    display: flex;
+    float: right;
+    margin-right: 5px;
+}
 .center{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.center2{
+    display: flex;
+    justify-content: center;
 }
 
 .textmargin{
