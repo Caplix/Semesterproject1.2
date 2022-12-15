@@ -71,8 +71,8 @@ nav{
 
 .two{
     flex:1;
+    padding-right: 10%;
 }
-
 .icon-size{
     margin:10px;
     margin-left: 20px;
@@ -116,6 +116,12 @@ nav{
     color: white;
 }
 
+#night{
+    scroll-behavior: smooth;
+}
+#energetica{
+    scroll-behavior: smooth;
+}
 @media (min-width:437px){
     header{
         height: 100px;

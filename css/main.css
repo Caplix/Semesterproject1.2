@@ -72,6 +72,7 @@ nav{
 
 .two{
     flex:1;
+    padding-right: 10%;
 }
 
 .icon-size{
@@ -98,6 +99,13 @@ nav{
     gap: 15px;
     overflow-x:auto;
     background-color: rgba(0, 0, 0, 0.172);
+}
+
+#night{
+    scroll-behavior: smooth;
+}
+#energetica{
+    scroll-behavior: smooth;
 }
 
 .scroller img{
